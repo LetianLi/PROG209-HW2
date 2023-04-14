@@ -1,0 +1,16 @@
+fieldset {
+    background-color:rgb(253, 249, 228);	
+    border:1px solid rgb(122, 38, 1);
+    margin:30px;
+    display:block;
+    width:70%;
+}
+
+legend {
+    margin-left:5px;
+}
+
+section {
+    padding-top:10px;
+    padding-bottom:20px;
+}

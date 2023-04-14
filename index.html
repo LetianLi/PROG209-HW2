@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="site.css">
+    <title>PROG209 HW2 - Github and Forms</title>
+</head>
+
+<body>
+    <form name = "mainForm" onsubmit="return false">
+        <fieldset id="pizzaForm">
+            <legend>Customize your pizza</legend>
+
+            <section>
+                <label>What size pizza would you like?</label>
+                <br>
+                <input type="radio" name="pizzaSize" value = "Small" id="small">
+                <label class="radioLabel" for="small">Small</label>
+                <br>
+                <input type="radio" name="pizzaSize" value ="Medium" id="medium">
+                <label class="radioLabel" for="medium">Medium</label>
+                <br>
+                <input type="radio" name="pizzaSize" value ="Large" id="large">
+                <label class="radioLabel" for="large">Large</label>
+            </section>
+
+            <section>
+                <label>How many toppings would you like?</label>
+                <br>
+                <select name="toppings" id="toppings" size="1">
+                    <option value="No">None</option>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                </select>
+            </section>
+
+            <input type="submit" value="Submit" id="submitBtn">
+
+        </fieldset>
+    </form>
+
+    <div id="orderInfo" style="display:none">
+        <h2>Your order</h2>
+        <p id="orderSize"></p>
+        <p id="orderToppings"></p>
+        <p id="orderCost"></p>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
