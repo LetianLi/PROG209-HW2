@@ -1,4 +1,4 @@
-# PROG209-HW2
+# PROG209 HW2 - Github and Forms
 
 **Assignment:**
 
